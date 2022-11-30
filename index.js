@@ -1,6 +1,7 @@
 const THREE = require('three');
 
 module.exports.addImpulse = function(obj, force, direction, world) {
+    obj = new THREE.Mesh(new THREE.BoxGeometry, new THREE.MeshBasicMaterial( { color: 0xff0000 } ));
 
     if (!(obj instanceof THREE.Mesh)) throw new TypeError('Object must be a threejs mesh.');
     if (!(typeof force !== 'number')) throw new TypeError('Force must be a number.')
@@ -10,7 +11,7 @@ module.exports.addImpulse = function(obj, force, direction, world) {
     direction = direction.normalize();
     var toApply = direction.multiplyScalar(force);
 
-    const physicsObj = new PhysicsBody(obj, toApply);
+    var physicsObj = new PhysicsBody(obj, toApply);
 
     if (!(world.objects.includes(physicsObj))) {
         world.objects.push(physicsObj);
