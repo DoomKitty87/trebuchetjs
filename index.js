@@ -20,6 +20,12 @@ module.exports.addImpulse = function(obj, force, direction, world) {
     }
 }
 
+module.exports.simulateWorld = function(world) {
+    world.objects.forEach(function(object) {
+        object.object.position.add(object.force);
+    })
+}
+
 World = class {
     constructor(drag) {
         this.drag = drag;
