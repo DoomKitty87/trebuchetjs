@@ -1,3 +1,6 @@
-exports.printMsg = function() {
-    console.log("This is a message from the demo package");
-  }
+var THREE = require('three');
+
+module.exports.addImpulse = function(obj) {
+    if (typeof obj !== 'THREE.Mesh') throw new TypeError('Input must be a threejs mesh.');
+    console.log('Success');
+}

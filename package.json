@@ -1,5 +1,5 @@
 {
-  "name": "trebuchet",
+  "name": "trebuchetjs",
   "version": "1.0.0",
   "description": "lightweight physics engine for threejs",
   "main": "index.js",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DoomKitty87/TrebuchetJS/issues"
   },
-  "homepage": "https://github.com/DoomKitty87/TrebuchetJS#readme"
+  "homepage": "https://github.com/DoomKitty87/TrebuchetJS#readme",
+  "dependencies": {
+    "three": "^0.146.0"
+  }
 }
