@@ -1,0 +1,19 @@
+{
+  "name": "trebuchet",
+  "version": "1.0.0",
+  "description": "lightweight physics engine for threejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DoomKitty87/TrebuchetJS.git"
+  },
+  "author": "Ansel Stanik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DoomKitty87/TrebuchetJS/issues"
+  },
+  "homepage": "https://github.com/DoomKitty87/TrebuchetJS#readme"
+}
