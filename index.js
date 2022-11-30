@@ -1,5 +1,3 @@
-const World = require('./world');
-const PhysicsBody = require('./physicsbody.js');
 const THREE = require('three');
 
 module.exports.addImpulse = function(obj, force, direction, world) {
@@ -19,5 +17,19 @@ module.exports.addImpulse = function(obj, force, direction, world) {
     }
     else {
         world.objects[world.objects.indexOf(physicsObj)].force += physicsObj.force;
+    }
+}
+
+module.exports.World = class {
+    constructor(drag) {
+        this.drag = drag;
+        this.objects = [];
+    }
+}
+
+module.exports.PhysicsBody = class {
+    constructor(obj, force) {
+        this.object = obj;
+        this.force = force;
     }
 }
