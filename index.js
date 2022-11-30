@@ -23,6 +23,10 @@ module.exports.addImpulse = function(obj, force, direction, world) {
 module.exports.simulateWorld = function(world) {
     world.objects.forEach(function(object) {
         object.object.position.add(object.force);
+        object.object.force -= world.drag;
+        if (object.object.force <= 0) {
+            world.objects.splice(world.objects.indexOf(object), 1);
+        }
     })
 }
 
