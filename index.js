@@ -20,14 +20,14 @@ module.exports.addImpulse = function(obj, force, direction, world) {
     }
 }
 
-module.exports.World = class {
+World = class {
     constructor(drag) {
         this.drag = drag;
         this.objects = [];
     }
 }
 
-module.exports.PhysicsBody = class {
+PhysicsBody = class {
     constructor(obj, force) {
         this.object = obj;
         this.force = force;
