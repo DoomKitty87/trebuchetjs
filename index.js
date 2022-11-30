@@ -34,16 +34,5 @@ PhysicsBody = class {
     }
 }
 
-module.exports.World = class {
-    constructor(drag) {
-        this.drag = drag;
-        this.objects = [];
-    }
-}
-
-module.exports.PhysicsBody = class {
-    constructor(obj, force) {
-        this.object = obj;
-        this.force = force;
-    }
-}
+module.exports.World = World
+module.exports.PhysicsBody = this.PhysicsBody
