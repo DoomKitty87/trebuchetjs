@@ -1,6 +1,6 @@
 {
   "name": "trebuchetjs",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "lightweight physics engine for threejs",
   "main": "index.js",
   "scripts": {
