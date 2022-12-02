@@ -29,14 +29,14 @@ module.exports.simulateWorld = function(world) {
         object.force.z = (Math.max(Math.abs(object.force.z) - world.drag, 0)) * Math.sign(object.force.z);
 
         if (object.force.x == 0 && object.force.y == 0 && object.force.z == 0) {
-            //world.objects.splice(world.objects.indexOf(object), 1);
+            world.objects.splice(world.objects.indexOf(object), 1);
         }
     })
 }
 
 module.exports.readPositions = function(world) {
     world.objects.forEach(function(object) {
-        console.log(object.position);
+        console.log(object.object.position);
     })
 }
 
