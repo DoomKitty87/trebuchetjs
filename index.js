@@ -30,6 +30,12 @@ module.exports.simulateWorld = function(world) {
     })
 }
 
+module.exports.readPositions = function(world) {
+    world.objects.forEach(function(object) {
+        console.log(object.position);
+    })
+}
+
 World = class {
     constructor(drag) {
         this.drag = drag;
