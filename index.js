@@ -51,4 +51,4 @@ PhysicsBody = class {
 }
 
 module.exports.World = World
-module.exports.PhysicsBody = this.PhysicsBody
+module.exports.PhysicsBody = PhysicsBody
