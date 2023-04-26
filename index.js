@@ -54,7 +54,7 @@ module.exports.readPositions = function(world) {
 }
 
 World = class {
-    constructor(drag, gravity = 0, up_axis = 'z') {
+    constructor(drag = 0, gravity = 0, up_axis = 'z') {
         this.drag = drag;
         this.gravity = gravity;
         this.up_axis = up_axis;
@@ -69,5 +69,5 @@ PhysicsBody = class {
     }
 }
 
-module.exports.World = World
-module.exports.PhysicsBody = PhysicsBody
+module.exports.World = World;
+module.exports.PhysicsBody = PhysicsBody;
