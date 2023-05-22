@@ -1,2 +1,2 @@
 # TrebuchetJS
- 
+ Lightweight physics simulation engine for Three.js. Naive calculations of drag and other physical effects favor performance and cartoon feel for applications where user interactivity is more important than realism.
